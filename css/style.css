@@ -377,6 +377,17 @@ select::placeholder {
 ############### Estructura Grid de paginas ##############
 ######################################################### */
 
+@media (max-width: 1200px) {
+
+  .services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+
 @media (max-width: 800px) {
   header {
     background-image: none;
@@ -432,6 +443,14 @@ select::placeholder {
 
   .img-index{
     width:300px;
+  }
+
+  .services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin-left: 10%;
   }
 }
 
@@ -515,5 +534,13 @@ select::placeholder {
 
   .img-index{
     width:200px;
+  }
+
+  .services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin-left: 10%;
   }
 }
