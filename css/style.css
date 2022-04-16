@@ -31,16 +31,18 @@ h1 {
   font-style: bold;
 }
 .black-title {
-  margin-top: 9px;
-  margin-bottom: 9px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   margin-left: 27px;
+  text-align: center;
 }
 
 .orange-title {
-  margin-top: 9px;
-  margin-bottom: 9px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   margin-left: 27px;
   color: #ff8a00;
+  text-align: center;
 }
 .menu {
   width: 100%;
@@ -102,7 +104,6 @@ header {
 }
 .content-index {
   grid-area: page-content;
-  margin-top: 45px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -110,6 +111,7 @@ header {
 .frase-index {
   /* width: 700px; */
   font-size: 30px;
+  margin: 10%;
 }
 
 .logo {
@@ -159,7 +161,6 @@ footer {
   width: 80%;
   margin-left: 10%;
   border-radius: 120px 0px 120px 0px;
-  margin-top: 20px;
 }
 
 .content-pages article p {
@@ -419,6 +420,21 @@ select::placeholder {
   .logo-ms {
     height: 80px;
   }
+
+  .content-index {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .frase-index {
+    padding: 10%;
+    text-align: center;
+  }
+
+  .img-index{
+    width:300px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -489,10 +505,16 @@ select::placeholder {
   
   .content-index {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
+    align-items: center;
   }
 
   .frase-index {
     padding: 10%;
+    text-align: center;
+  }
+
+  .img-index{
+    width:200px;
   }
 }
