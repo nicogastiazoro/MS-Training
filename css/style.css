@@ -8,7 +8,7 @@ body {
   font-family: "Red Hat Display", sans-serif;
   /* display: flex;
   flex-direction: column; */
-  bottom:0;
+  bottom: 0;
 }
 
 .container {
@@ -128,12 +128,10 @@ footer {
   height: 40px;
 }
 
-
- .social-media {
+.social-media {
   background-color: #c4c4c4;
   border-radius: 45px 0px 0px 0px;
   height: 100px;
- 
 }
 
 .social-media ul {
@@ -142,8 +140,7 @@ footer {
   justify-content: center;
   padding: 30px;
   height: 30px;
-} 
-
+}
 
 .copyright {
   text-align: center;
@@ -382,8 +379,49 @@ select::placeholder {
 ############### Estructura Grid de paginas ##############
 ######################################################### */
 
+@media (max-width: 800px) {
+  header {
+    background-image: none;
+  }
 
- @media(max-width:500px){
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    list-style: none;
+    float: right;
+  }
+
+  nav ul li {
+    margin-bottom: 10%;
+  }
+
+  nav img {
+    height: 400px;
+  }
+  
+  .logo-ms {
+    height: 80px;
+  }
+}
+
+@media (max-width: 500px) {
   .social-media {
     background-color: #c4c4c4;
     border-radius: 45px 0px 0px 0px;
@@ -392,8 +430,7 @@ select::placeholder {
     flex-direction: column;
     justify-content: center;
   }
-  
-  
+
   .social-media ul {
     display: flex;
     flex-direction: column;
@@ -410,22 +447,22 @@ select::placeholder {
     /* margin-bottom: 10px; */
   }
 
-  header{
+  header {
     background-image: none;
   }
 
-  .menu{
+  .menu {
     display: flex;
     flex-direction: column;
     justify-items: center;
   }
 
-   nav{
+  nav {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-  } 
+  }
 
   nav ul {
     display: flex;
@@ -438,24 +475,24 @@ select::placeholder {
     float: right;
   }
 
-  nav ul li{
+  nav ul li {
     margin-bottom: 10%;
   }
 
   nav img {
     height: 400px;
   }
-
-   .logo-ms{
+  
+  .logo-ms {
     height: 80px;
-  } 
-
-  .content-index{
+  }
+  
+  .content-index {
     display: flex;
     flex-direction: column;
   }
 
-  .frase-index{
-    padding:10%;
+  .frase-index {
+    padding: 10%;
   }
-} 
+}
