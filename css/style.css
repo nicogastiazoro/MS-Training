@@ -6,15 +6,12 @@
 
 body {
   font-family: "Red Hat Display", sans-serif;
-  /* display: flex;
-  flex-direction: column; */
   bottom: 0;
 }
 
 .container {
   display: grid;
   gap: 30px;
-  /* bottom: 0; */
   min-height: 100vh;
   grid-template-areas:
     "header"
@@ -428,7 +425,8 @@ select::placeholder {
   }
 
   .frase-index {
-    padding: 10%;
+    margin-inline: 15%;
+    margin-top: 0;
     text-align: center;
   }
 
@@ -510,7 +508,8 @@ select::placeholder {
   }
 
   .frase-index {
-    padding: 10%;
+    margin-inline: 15%;
+    margin-top: 0;
     text-align: center;
   }
 
