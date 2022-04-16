@@ -389,6 +389,7 @@ select::placeholder {
     border-radius: 45px 0px 0px 0px;
     height: 400px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
   }
   
@@ -406,6 +407,11 @@ select::placeholder {
   ul li {
     display: inline-block;
     margin-right: 0px;
+    /* margin-bottom: 10px; */
+  }
+
+  header{
+    background-image: none;
   }
 
   .menu{
@@ -417,6 +423,8 @@ select::placeholder {
    nav{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
   } 
 
   nav ul {
@@ -428,6 +436,10 @@ select::placeholder {
     margin-bottom: 30px;
     list-style: none;
     float: right;
+  }
+
+  nav ul li{
+    margin-bottom: 10%;
   }
 
   nav img {
