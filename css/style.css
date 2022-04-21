@@ -17,6 +17,7 @@ body {
     "header"
     "content"
     "footer";
+  bottom: 0;
 }
 
 a {
@@ -34,8 +35,7 @@ h1 {
 }
 
 .orange-title {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 1em;
   margin-left: 27px;
   color: #ff8a00;
   text-align: center;
@@ -44,27 +44,6 @@ h1 {
   width: 100%;
   position: fixed;
 }
-/*
-nav {
-  font-size: 18px;
-  color: white;
-  position: sticky;
-  background-image: url("../assets/img/navbar.jpg");
-  background-size: cover;
-}
-
-nav img {
-  width: 110px;
-  height: 80px;
-  border-radius: 0px 0px 45px 0px;
-}
-
-nav ul {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  list-style: none;
-  float: right;
-}*/
 
 nav img {
   width: 100px;
@@ -127,7 +106,7 @@ header {
 /*Footer*/
 footer {
   grid-area: footer;
-  bottom: 0;
+  bottom: 0 !important; 
   margin-top: auto;
 }
 
@@ -166,7 +145,7 @@ footer {
   background-color: #ffddba;
   width: 80%;
   margin-left: 10%;
-  border-radius: 120px 0px 120px 0px;
+  border-radius: 120px 25px 120px 25px;
 }
 
 .content-pages article p {
@@ -246,7 +225,7 @@ footer {
   margin-left: 10%;
   justify-content: space-evenly;
   justify-items: center;
-  border-radius: 120px 0px 120px 0px;
+  border-radius: 120px 25px 120px 25px;
   margin-top: 20px;
   flex-direction: column;
 }
@@ -408,6 +387,7 @@ a img:hover{
 @media (max-width: 800px) {
   header {
     background-image: none;
+    height: auto;
   }
 
   .menu {
@@ -494,17 +474,11 @@ a img:hover{
   ul li {
     display: inline-block;
     margin-right: 0px;
-    /* margin-bottom: 10px; */
   }
 
   header {
     background-image: none;
-  }
-
-  .menu {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
+    height: auto;
   }
 
   nav {
@@ -538,6 +512,7 @@ a img:hover{
   }
   
   .content-index {
+    margin-top: auto;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
