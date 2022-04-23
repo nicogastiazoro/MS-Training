@@ -7,6 +7,7 @@
 body {
   font-family: "Red Hat Display", sans-serif;
   bottom: 0;
+  align-items: center;
 }
 
 .wrapper {
@@ -45,6 +46,10 @@ h1 {
   position: fixed;
 }
 
+nav{
+  padding: 1em;
+}
+
 nav img {
   width: 100px;
   height: 65px;
@@ -81,11 +86,13 @@ header {
   height: 50%;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .content .black-title {
   grid-area: page-title;
 }
+
 .content-index {
   grid-area: page-content;
   display: flex;
@@ -110,6 +117,9 @@ footer {
   margin-top: auto;
 }
 
+footer ul{
+  padding: 1em;
+}
 .footer-img {
   width: 40px;
   height: 40px;
@@ -144,7 +154,6 @@ footer {
 .content-pages {
   background-color: #ffddba;
   width: 80%;
-  margin-left: 10%;
   border-radius: 120px 25px 120px 25px;
 }
 
@@ -184,7 +193,7 @@ footer {
   padding-left: 15px;
   background-color: #ff8a00;
   height: 100px;
-  border-radius: 0px 0px 200px 45px;
+  border-radius: 45px 45px 200px 45px;
 }
 .service-head h2 {
   padding: 20px;
@@ -200,20 +209,35 @@ footer {
     "period" "period" "period" "period"
     "capacity";
 }
+
 .service-body h3 {
   padding-top: 20px;
   grid-area: price;
 }
 
 .service-period {
-  padding-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 80px;
+  height: 100px;
 }
 
 .service-capacity {
-  padding-top: 20px;
+  padding: 10px;
   display: grid;
   grid-area: capacity;
+  width: 100px;
+  height: 60px;
 }
+
+.service-capacity-1 {
+  padding: 10px;
+  display: grid;
+  grid-area: capacity;
+  width: 60px;
+  height: 60px;
+}
+
 
 /* Trainings */
 
@@ -222,12 +246,12 @@ footer {
   background-color: #ffddba;
   display: flex;
   width: 80%;
-  margin-left: 10%;
   justify-content: space-evenly;
   justify-items: center;
   border-radius: 120px 25px 120px 25px;
   margin-top: 20px;
   flex-direction: column;
+  align-items: center;
 }
 
 .training {
@@ -246,15 +270,24 @@ footer {
   justify-content: space-evenly;
 }
 
-.training-dark {
+.trainings .training-dark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #ccb195;
 }
+
 .training-body-dark {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-evenly;
+  
 }
 
+.training-body-dark p{
+  width: 50%;
+  text-align: center;
+}
 .training p {
   width: 50%;
   text-align: center;
@@ -382,6 +415,20 @@ a img:hover{
     width: 80%;
     margin-left: 10%;
   }
+
+  .training-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .training-body-dark {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 }
 
 @media (max-width: 800px) {
@@ -449,9 +496,23 @@ a img:hover{
     width: 80%;
     margin-left: 10%;
   }
+
+  .training-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .training-body-dark {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .social-media {
     background-color: #c4c4c4;
     border-radius: 45px 0px 0px 0px;
@@ -535,4 +596,23 @@ a img:hover{
     width: 80%;
     margin-left: 10%;
   }
+
+  .trainings{
+    width: 100%;
+  }
+  .training-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .training-body-dark {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+
 }
