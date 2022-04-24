@@ -154,7 +154,7 @@ footer ul{
 .content-pages {
   background-color: #ffddba;
   width: 80%;
-  border-radius: 120px 25px 120px 25px;
+  border-radius: 25px 25px 25px 25px;
 }
 
 .content-pages article p {
@@ -285,21 +285,15 @@ footer ul{
 }
 
 .training-body-dark p{
-  width: 50%;
+  width: 80%;
   text-align: center;
 }
 .training p {
-  width: 50%;
+  width: 80%;
   text-align: center;
 }
 
 /* Contact */
-
-.parrafo-contacto {
-  font-size: 18px;
-  margin-top: 40px;
-  text-align: center;
-}
 
 .contact-article {
   display: flex;
@@ -309,6 +303,14 @@ footer ul{
 
 .contact-block-1 {
   grid-area: apeynom;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap:10%;
+}
+
+.contact-block-1 input{
+  width: 60% !important;
 }
 
 .d-email {
@@ -321,6 +323,14 @@ footer ul{
 
 .contact-block-2 {
   grid-area: agesex;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.contact-block-2 input,
+.contact-block-2 select
+{
+  width: 60% !important;
 }
 
 .contact-block-1,
@@ -332,6 +342,8 @@ footer ul{
 
 .d-comments {
   grid-area: comments;
+  display: flex;
+  align-items: center;
 }
 
 .d-buttons-form {
@@ -352,7 +364,7 @@ input {
 }
 
 .input-email-phone {
-  width: 300px;
+  width: 60%;
 }
 
 .d-sex select {
@@ -367,9 +379,12 @@ select::placeholder {
   padding-left: 15px;
 }
 
+.d-comments label{
+  padding: 5px;
+}
 .d-comments textarea {
-  width: 500px;
-  height: 100px;
+  width: 90%;
+  height: 90%;
   border: 0px;
 }
 
@@ -379,10 +394,9 @@ select::placeholder {
 .contact-block-2,
 .d-comments,
 .d-buttons-form {
-  margin: 20px;
+  margin: 5%;
 }
 
-.d-name,
 .d-age {
   margin-right: 30px;
 }
@@ -612,6 +626,16 @@ a img:hover{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+  }
+
+  .content-pages{
+    width: 100%;
+  }
+
+  .d-comments textarea {
+    width: 90%;
+    height: 100px;
+    border: 0px;
   }
 
 
