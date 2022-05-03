@@ -1,4 +1,11 @@
-@media (max-width: 1200px) {
+
+$screenWidth:(
+  desktop: 1200px,
+  tablet: 800px,
+  mobile:600px
+);
+
+@media (max-width: map-get($screenWidth,desktop)) {
     .services {
       display: flex;
       flex-direction: column;
@@ -19,7 +26,7 @@
       align-items: center;
     }
   }
-  @media (max-width: 800px) {
+  @media (max-width: map-get($screenWidth,tablet)) {
     header {
       background-image: none;
       height: auto;
@@ -87,7 +94,7 @@
       align-items: center;
     }
   }
-  @media (max-width: 600px) {
+  @media (max-width: map-get($screenWidth,mobile)) {
     .social-media {
       background-color: #c4c4c4;
       border-radius: 45px 0px 0px 0px;
