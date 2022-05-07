@@ -1,7 +1,4 @@
-@import "_media_queries";
-@import "_contacto";
-@import "_entrenamientos";
-@import "_servicios";
+
 
 * {
   font-family: "Red Hat Display", sans-serif;
@@ -124,3 +121,9 @@ footer {
     }
   }
 }
+
+
+@import "_contacto";
+@import "_entrenamientos";
+@import "_servicios";
+@import "_media_queries";
