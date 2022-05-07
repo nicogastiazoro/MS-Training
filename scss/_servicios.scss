@@ -1,3 +1,8 @@
+@mixin tamanio ($w,$h){
+  width: $w;
+  height: $h;
+}
+
 .services {
     display: flex;
     flex-direction: row;
@@ -12,8 +17,7 @@
     margin-top: 50px;
     margin-bottom: 50px;
     background-color: #fffefd;
-    width: 250px;
-    height: 320px;
+    @include tamanio(250px,320px);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
     &:hover {
@@ -44,20 +48,19 @@
   .service-period {
     padding-top: 10px;
     padding-bottom: 10px;
-    width: 80px;
-    height: 100px;
+    @include tamanio (80px,100px);
   }
   .service-capacity {
     padding: 10px;
     display: grid;
     grid-area: capacity;
-    width: 100px;
-    height: 60px;
+    @include tamanio (100px,60px);
   }
   .service-capacity-1 {
-    padding: 10px;
-    display: grid;
-    grid-area: capacity;
-    width: 60px;
-    height: 60px;
+    @extend .service-capacity;
+    @include tamanio (60px,60px);
   }  
+
+.card{
+  align-items: center !important;
+}

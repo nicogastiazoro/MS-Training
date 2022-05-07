@@ -34,9 +34,8 @@
     justify-content: space-evenly;
   }
   .training-body-dark {
-    display: flex;
+    @extend .training-body;
     flex-direction: row-reverse;
-    justify-content: space-evenly;
     p {
       width: 80%;
       text-align: center;

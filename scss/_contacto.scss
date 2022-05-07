@@ -29,8 +29,6 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    display: flex;
-    flex-direction: row;
     margin: 5%;
     input {
       width: 60% !important;
@@ -75,11 +73,8 @@
   }
   .d-sex {
     select {
-      border-radius: 180px;
-      border: 0px;
-      height: 30px;
+      @extend input;
       width: 150px;
-      text-align: center;
     }
   }
   select {
