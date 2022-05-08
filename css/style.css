@@ -31,7 +31,6 @@ h1 {
 
 .orange-title {
   margin-bottom: 1em;
-  margin-left: 27px;
   color: #ff8a00;
   text-align: center; }
 
@@ -193,8 +192,7 @@ select::placeholder {
   width: 80%;
   justify-content: space-evenly;
   justify-items: center;
-  border-radius: 120px 25px 120px 25px;
-  margin-top: 20px;
+  border-radius: 25px 25px 25px 25px;
   flex-direction: column;
   align-items: center; }
   .trainings .training-dark {
@@ -204,7 +202,8 @@ select::placeholder {
     background-color: #ccb195; }
 
 .training {
-  margin: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   width: 80%; }
   .training h2 {
     text-align: center;
@@ -284,11 +283,29 @@ select::placeholder {
 .card {
   align-items: center !important; }
 
-@media (min-width: 801px) {
+@media (min-width: 1250px) {
   .services {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    width: 80%;
+    margin-left: 10%; }
+  .training-body, .training-body-dark {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+  .training-body-dark {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; } }
+
+@media (min-width: 801px) and (max-width: 1249px) {
+  .services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 80%;
     margin-left: 10%; }
   .training-body, .training-body-dark {
