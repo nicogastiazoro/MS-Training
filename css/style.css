@@ -107,6 +107,14 @@ footer {
     font-size: 25px;
     text-align: center; }
 
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center; }
+
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem; }
+
 .contact-article {
   display: flex;
   flex-direction: column;
