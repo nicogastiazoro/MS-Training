@@ -1,92 +1,37 @@
 .contact-article {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-inline: 2rem;
+  .lead {
+    margin-bottom: 0 !important;
   }
-  .contact-block-1 {
-    grid-area: apeynom;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 10%;
-    display: flex;
-    flex-direction: row;
-    margin: 5%;
-    input {
-      width: 60% !important;
-    }
-  }
-  .d-email {
-    grid-area: email;
-    margin: 5%;
-  }
-  .d-phonenumber {
-    grid-area: phonenumber;
-    margin: 5%;
-  }
-  .contact-block-2 {
-    grid-area: agesex;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 5%;
-    input {
-      width: 60% !important;
-    }
-    select {
-      width: 60% !important;
-    }
-  }
-  .d-buttons-form {
-    display: flex;
-    flex-direction: row;
-    grid-area: buttons;
-    justify-content: center;
-    margin: 5%;
-    input {
-      width: 100px;
-      margin-inline: 30px;
-    }
-  }
-  .d-comments {
-    grid-area: comments;
-    display: flex;
-    align-items: center;
-    margin: 5%;
-    label {
-      padding: 5px;
-    }
-    textarea {
-      width: 90%;
-      height: 90%;
-      border: 0px;
-    }
-  }
+}
+.d-email {
+  grid-area: email;
+  margin: 5%;
+}
+.d-phonenumber {
+  grid-area: phonenumber;
+  margin: 5%;
+}
+
+.d-buttons-form {
+  display: flex;
+  flex-direction: row;
+  grid-area: buttons;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  margin-inline: 5%;
   input {
+    width: 100px;
+    margin-inline: 30px;
     border-radius: 180px;
     border: 0px;
     height: 30px;
-    text-align: center;
   }
-  .input-email-phone {
-    width: 60%;
+  input:hover {
+    transform: scale(1.2);
   }
-  .d-sex {
-    select {
-      @extend input;
-      width: 150px;
-    }
-  }
-  select {
-    &::placeholder {
-      padding-left: 15px;
-    }
-  }
-  .d-age {
-    margin-right: 30px;
-  }
-  .contact-form {
-    display: grid;
-    justify-content: center;
-    grid-template-areas: "apeynom" "email" "phonenumber" "agesex" "comments" "buttons";
-  }
+}

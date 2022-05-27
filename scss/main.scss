@@ -115,6 +115,7 @@ footer {
   background-color: #ffddba;
   width: 80%;
   border-radius: 25px 25px 25px 25px;
+  padding: 1rem;
   article {
     p {
       padding: 50px;
@@ -137,5 +138,5 @@ footer {
 
 @import "_contacto";
 @import "_entrenamientos";
-@import "_servicios";
 @import "_media_queries";
+@import "_aboutme";

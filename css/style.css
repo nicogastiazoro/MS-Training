@@ -101,7 +101,8 @@ footer {
 .content-pages {
   background-color: #ffddba;
   width: 80%;
-  border-radius: 25px 25px 25px 25px; }
+  border-radius: 25px 25px 25px 25px;
+  padding: 1rem; }
   .content-pages article p {
     padding: 50px;
     font-size: 25px;
@@ -118,19 +119,10 @@ footer {
 .contact-article {
   display: flex;
   flex-direction: column;
-  justify-content: center; }
-
-.contact-block-1 {
-  grid-area: apeynom;
-  display: flex;
-  flex-direction: row;
   justify-content: center;
-  gap: 10%;
-  display: flex;
-  flex-direction: row;
-  margin: 5%; }
-  .contact-block-1 input, .contact-block-1 .d-sex select, .d-sex .contact-block-1 select {
-    width: 60% !important; }
+  padding-inline: 2rem; }
+  .contact-article .lead {
+    margin-bottom: 0 !important; }
 
 .d-email {
   grid-area: email;
@@ -140,61 +132,22 @@ footer {
   grid-area: phonenumber;
   margin: 5%; }
 
-.contact-block-2 {
-  grid-area: agesex;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 5%; }
-  .contact-block-2 input, .contact-block-2 .d-sex select, .d-sex .contact-block-2 select {
-    width: 60% !important; }
-  .contact-block-2 select {
-    width: 60% !important; }
-
 .d-buttons-form {
   display: flex;
   flex-direction: row;
   grid-area: buttons;
   justify-content: center;
-  margin: 5%; }
-  .d-buttons-form input, .d-buttons-form .d-sex select, .d-sex .d-buttons-form select {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  margin-inline: 5%; }
+  .d-buttons-form input {
     width: 100px;
-    margin-inline: 30px; }
-
-.d-comments {
-  grid-area: comments;
-  display: flex;
-  align-items: center;
-  margin: 5%; }
-  .d-comments label {
-    padding: 5px; }
-  .d-comments textarea {
-    width: 90%;
-    height: 90%;
-    border: 0px; }
-
-input, .d-sex select {
-  border-radius: 180px;
-  border: 0px;
-  height: 30px;
-  text-align: center; }
-
-.input-email-phone {
-  width: 60%; }
-
-.d-sex select {
-  width: 150px; }
-
-select::placeholder {
-  padding-left: 15px; }
-
-.d-age {
-  margin-right: 30px; }
-
-.contact-form {
-  display: grid;
-  justify-content: center;
-  grid-template-areas: "apeynom" "email" "phonenumber" "agesex" "comments" "buttons"; }
+    margin-inline: 30px;
+    border-radius: 180px;
+    border: 0px;
+    height: 30px; }
+  .d-buttons-form input:hover {
+    transform: scale(1.2); }
 
 .trainings {
   grid-area: content-trainings;
@@ -233,66 +186,6 @@ select::placeholder {
   .training-body-dark p {
     width: 80%;
     text-align: center; }
-
-.services {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 80%;
-  margin-left: 10%; }
-
-.service {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  background-color: #fffefd;
-  width: 250px;
-  height: 320px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 25px; }
-  .service:hover {
-    transform: scale(1.1, 1.1);
-    filter: alpha(opacity=95); }
-
-.service-head {
-  padding-left: 15px;
-  background-color: #ff8a00;
-  height: 100px;
-  border-radius: 45px 45px 200px 45px; }
-  .service-head h2 {
-    padding: 20px;
-    font-size: 22px; }
-
-.service-body {
-  display: grid;
-  flex-direction: column;
-  justify-items: center;
-  grid-template-areas: "price" "period" "capacity"; }
-  .service-body h3 {
-    padding-top: 20px;
-    grid-area: price; }
-
-.service-period {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  width: 80px;
-  height: 100px; }
-
-.service-capacity, .service-capacity-1 {
-  padding: 10px;
-  display: grid;
-  grid-area: capacity;
-  width: 100px;
-  height: 60px; }
-
-.service-capacity-1 {
-  width: 60px;
-  height: 60px; }
-
-.card {
-  align-items: center !important; }
 
 @media (min-width: 1250px) {
   .services {
@@ -447,3 +340,12 @@ select::placeholder {
     width: 90%;
     height: 100px;
     border: 0px; } }
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.img-profe {
+  border-radius: 25px;
+  margin: 1rem; }

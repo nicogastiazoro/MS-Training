@@ -19,7 +19,6 @@
   </head>
 
   <!-- Comienzo del Body-->
-
   <body>
     <div class="wrapper">
         <!-- logo + nav -->
@@ -56,6 +55,7 @@
         </div>
       </nav>
     </header>
+
     <section class="content">
       <h1 class="display-4 orange-title">Contacto</h1>
       <div class="content-pages">
@@ -63,44 +63,45 @@
         <p class="lead">Por favor ingresa tus datos y contanos en que podemos ayudarte</p>
       
         <form class="contact-form" action="#">
-          <div class="contact-block-1">
-          <div class="d-name">
-            <label for="name">Nombre: </label>
+          
+          <div class="form-group">
+            <label class="control-label" for="name">Nombre: </label>
             <input
-              class="input-name-lastname"
+              class="form-control"
               type="text"
               placeholder="Nombre"
               id="name"
             />
           </div>
-          <div class="d-lastname">
-            <label for="lastname">Apellido: </label>
+          <div class="form-group">
+            <label  class="control-label" for="lastname">Apellido: </label>
             <input
-              class="input-name-lastname"
+              class="form-control"
               type="text"
               placeholder="Apellido"
               id="lastname"
             />
           </div>
-          </div>
-          <div class="d-email">
-            <label for="email">Correo Electrónico: </label
+          
+          <div class="form-group">
+            <label  class="control-label"  for="email">Correo Electrónico: </label
             ><input
-              class="input-email-phone"
+              class="form-control"
               type="email"
               placeholder="aaa@gmail.com"
               id="email"
             />
           </div>
-          <div class="d-phonenumber">
-            <label for="phonenumber"> Telefono: </label>
+          <div class="form-group">
+            <label class="control-label"  for="phonenumber"> Telefono: </label>
             <input
-              class="input-email-phone"
+              class="form-control"
               type="number"
               placeholder="+54 9 1111-1111"
               id="phonenumber"
             />
           </div>
+          <!--
           <div class= "contact-block-2">
           <div class="d-age">
             <label for="age"> Edad: </label>
@@ -114,10 +115,11 @@
               <option value="Woman">Mujer</option>
             </select>
           </div>
-        </div>
-          <div class="d-comments">
-            <label for="comments"> Comentarios: </label><br />
+        </div>-->
+        <div class="form-group">
+            <label  class="control-label"  for="comments"> Comentarios: </label><br />
             <textarea
+              class = "form-control"
               placeholder="Ingrese sus comentarios aquí"
               id="comments"
             ></textarea>
@@ -151,6 +153,7 @@
     </ul>
   </footer>
   </body>
+
 
   <script src="../js/bootstrap.js"></script>
 </html>
